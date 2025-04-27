@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REL Law - Dynamic Legal Services</title>
 	<link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header with Navigation -->
@@ -17,7 +18,7 @@
                     <div class="logo-text">REL LAW</div>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#carousel">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#practices">Practice Areas</a></li>
                     <li><a href="#team">Our Team</a></li>
@@ -33,8 +34,51 @@
         </div>
     </header>
 
+   <!-- Carousel Section -->
+<section class="carousel" id="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <div style="padding-top: 5%;">
+            <div class="year-container">
+                <span class="year">20</span>
+                    <img src="Images/Logo.png" alt="REL LAW Logo" class="hero-logo">
+                <span class="year">25</span>
+            </div>
+            <div class="firm-name">
+                <p>The Law Office of</p>
+                <h2>RUMA<br>ESCALANTE<br>&amp; LABUGUEN</h2>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+          <div class="text-container" style="padding-top:5%;">
+                <h1 style="text-align:center !important">Dynamic Legal Services</h1>
+                <p>Welcome to our law office. We are a team of Philippine lawyers based in Isabela, offering a wide range of legal services in civil, criminal, administrative,
+                    corporate, property, and family law.</p>
+                <p>With years of experience an a strong understanding of both the public and private sectors, we provide practical legal counsel tailored to the needs of individuals, 
+                    businesses, and government entities.
+                </p>
+            </div>
+      </div>
+      <div class="carousel-slide" class="slideImage">
+        <img src="Images/Group_pic.png" alt="Group picture">
+      </div>
+    </div>
+    <div class="carousel-navigation">
+      <button class="carousel-prev">&#10094;</button>
+      <button class="carousel-next">&#10095;</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+  </section>
+  
+  
+
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!-- <section class="hero" id="home">
     <div class="container">
         <div class="hero-container">
             <div class="hero-content">
@@ -55,7 +99,7 @@
             </div>
         </div>
     </div>
-	</section>
+	</section> -->
 
     <!-- Services Section -->
     <section class="services" id="services">
@@ -160,15 +204,21 @@
         <div class="container">
             <div class="attorney-container">
                 <div class="attorney-image">
-                    <img src="Images/Ruma_Formal.png" alt="Attorney Ruma Full Profile">
+                    <img src="Images/Ruma_Formal.jpeg" alt="Attorney Ruma Full Profile">
                 </div>
                 <div class="attorney-info">
                     <h2>Atty. Maureen P. Ruma</h2>
                     <h3>Managing Partner</h3>
                     
                     <div class="attorney-bio">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor accumsan tellus cursus, finibus ullamcorper orci consectetur. Mauris non ultrices odio. Pellentesque vitae nisl nec libero interdum porta accumsan nec erat. Maecenas elementum pellentesque ligula, nec tempus odio consectetur sit amet. Donec gravida volutpat tortor. Vivamus hendrerit metus sit amet quam feugiat tempus. Nunc dictum justo quis dolor ornare, quis aliquam sapien pharetra. Sed sollicitudin aliquet nisl, sed suscipit mauris.</p>
-                        <p>Aliquam vehicula blandit lacinia. Aenean at faucibus dui, quis pulvinar nibh. Morbi finibus risus non massa pretium, ac dapibus dui molestie. Donec suscipit magna nec eros tristique, quis ultricies magna gravida. Cras ante nunc, sollicitudin interdum hendrerit eu, lobortis sit amet quam. Nulla nibh mauris, varius ut gravida non, suscipit eu ex. Sed tempor, turpis et interdum porta, lorem dui scelerisque turpis, ut ultricies mi justo a lorem.</p>
+                        <p>Atty. Maureen P. Ruma is a licensed attorney and a member of the Integrated Bar of the Philippines since 2023. 
+                            She graduated with a Bachelor of Arts in Language and Literature from the University of the Philippines Baguio in 2018. 
+                            Even before beginning her legal career, and continuing to the present, Atty. Ruma has served as an instructor at Isabela State University, 
+                            where her expertise in language, communication, and research laid a strong foundation for her legal practice.</p>
+                        <p>She specializes in civil, criminal, administrative, and property law, offering a comprehensive range of legal services,
+                             including consultancy, contract drafting and review, and representation for both individuals and corporate clients.</p>
+                        <p>Committed to providing reliable, practical, and client-focused solutions, Atty. Ruma works closely with clients to understand their goals and
+                             craft effective strategies that address their legal needs with precision and confidence.</p>
                     </div>
                     
                     <!--<div class="attorney-details">
@@ -211,15 +261,18 @@
         <div class="container">
             <div class="attorney-container">
                 <div class="attorney-image">
-                    <img src="Images/Escalante_Formal.png" alt="Attorney Escalante Full Profile">
+                    <img src="Images/Escalante_Formal.jpeg" alt="Attorney Escalante Full Profile">
                 </div>
                 <div class="attorney-info">
                     <h2>Atty. Andrew A. Escalante</h2>
                     <h3>Senior Partner</h3>
                     
                     <div class="attorney-bio">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor accumsan tellus cursus, finibus ullamcorper orci consectetur. Mauris non ultrices odio. Pellentesque vitae nisl nec libero interdum porta accumsan nec erat. Maecenas elementum pellentesque ligula, nec tempus odio consectetur sit amet. Donec gravida volutpat tortor. Vivamus hendrerit metus sit amet quam feugiat tempus. Nunc dictum justo quis dolor ornare, quis aliquam sapien pharetra. Sed sollicitudin aliquet nisl, sed suscipit mauris.</p>
-                        <p>Aliquam vehicula blandit lacinia. Aenean at faucibus dui, quis pulvinar nibh. Morbi finibus risus non massa pretium, ac dapibus dui molestie. Donec suscipit magna nec eros tristique, quis ultricies magna gravida. Cras ante nunc, sollicitudin interdum hendrerit eu, lobortis sit amet quam. Nulla nibh mauris, varius ut gravida non, suscipit eu ex. Sed tempor, turpis et interdum porta, lorem dui scelerisque turpis, ut ultricies mi justo a lorem.</p>
+                        <p>Atty. Andrew A. Escalante is a licensed attorney and a member of the Integrated Bar of the Philippines since 2025. Alongside his legal career,
+                             he is a Professional Agricultural and Biosystems Engineer, combining technical proficiency with legal insight to offer a multidisciplinary approach to complex challenges.</p>
+                        <p>With over a decade of public service experience, he currently serves as Supervising Engineer at the National Irrigation Administration – Magat River Integrated Irrigation System, 
+                            Division 1, based in Santiago City. His career reflects a strong commitment to nation-building, community empowerment, and principled public service.</p>
+                        <p>In private practice, Atty. Escalante focuses on human rights advocacy, corporate regulatory compliance, and criminal defense, providing strategic and solution-driven legal services to individuals, businesses, and communities.</p>
                     </div>
                                         
                     <div class="attorney-buttons">
@@ -236,15 +289,19 @@
         <div class="container">
             <div class="attorney-container">
                 <div class="attorney-image">
-                    <img src="Images/Labugen_Formal.png" alt="Attorney Labugen Full Profile">
+                    <img src="Images/Labugen_Formal.jpeg" alt="Attorney Labugen Full Profile">
                 </div>
                 <div class="attorney-info">
                     <h2>Atty. Mia Marinelle R. Labugen</h2>
                     <h3>Senior Partner</h3>
                     
                     <div class="attorney-bio">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor accumsan tellus cursus, finibus ullamcorper orci consectetur. Mauris non ultrices odio. Pellentesque vitae nisl nec libero interdum porta accumsan nec erat. Maecenas elementum pellentesque ligula, nec tempus odio consectetur sit amet. Donec gravida volutpat tortor. Vivamus hendrerit metus sit amet quam feugiat tempus. Nunc dictum justo quis dolor ornare, quis aliquam sapien pharetra. Sed sollicitudin aliquet nisl, sed suscipit mauris.</p>
-                        <p>Aliquam vehicula blandit lacinia. Aenean at faucibus dui, quis pulvinar nibh. Morbi finibus risus non massa pretium, ac dapibus dui molestie. Donec suscipit magna nec eros tristique, quis ultricies magna gravida. Cras ante nunc, sollicitudin interdum hendrerit eu, lobortis sit amet quam. Nulla nibh mauris, varius ut gravida non, suscipit eu ex. Sed tempor, turpis et interdum porta, lorem dui scelerisque turpis, ut ultricies mi justo a lorem.</p>
+                        <p>Atty. Mia Marinelle R. Labuguen is a licensed attorney and a member of the Integrated Bar of the Philippines since 2023. She holds a Bachelor of Arts in Social Sciences major in Economics and 
+                            minor in Political Science from the University of the Philippines Baguio where she graduated in 2011.</p>
+                        <p>Atty. Labuguen currently serves as the Municipal Government Department Head at the Local Government Unit of San Guillermo, Isabela. With over a decade of experience in public service,
+                             her extensive background in governance has sharpened her expertise in administrative law and government procurement law-- areas where she now focuses her legal practice.</p>
+                        <p>Beyond her work in public administration, Atty. Labuguen is deeply engaged in community service particularly in advocating for the legal rights and welfare of women and children 
+                            in her locality. Her dedication to both public service and the law makes her a valuable asset to our firm and to the communities she serves.</p>
                     </div>
                                         
                     <div class="attorney-buttons">
@@ -257,6 +314,33 @@
         </div>
     </section>
     
+<!-- Contact Section with Google Maps -->
+<section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Ruma Escalante and Labuguen Law</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Unit 1 San Andres Commercial Bldg., Tuguegarao Rd., corner Basilio St., San Andres, Santiago City, Isabela</p>
+          <p><i class="fas fa-phone"></i> 0995-198-4038</p>
+          <p><i class="fas fa-envelope"></i> rumaescavantelabugenlaw@gmail.com</p>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.002186091048!2d121.5541182!3d16.7032169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339007765df58127%3A0xf721cc7ef19f0484!2sRuma%20Escalante%20Labuguen%20Law!5e0!3m2!1sen!2sph!4v1615566931!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  
+
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
@@ -266,10 +350,10 @@
 						<img src="Images/Logo.png" alt="REL LAW Logo">
                         <div class="logo-text">REL LAW</div>
                     </div>
-                    <p>📍 Unit 1 San Andres Commercial Bldg., Tuguegarao Rd., 
+                    <p><i class="fas fa-map-marker-alt"></i> Unit 1 San Andres Commercial Bldg., Tuguegarao Rd., 
 						<br/>corner Basilio St., San Andres, Santiago City, Isabela</p>
-                    <p>📞 0995-198-4038</p>
-                    <p>📧 rumaescavantelabugenlaw@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0995-198-4038</p>
+                    <p><i class="fas fa-envelope"></i> rumaescavantelabugenlaw@gmail.com</p>
                 </div>
 				<div class="footer-links">
                     <h4>Office Hours</h4>
@@ -283,7 +367,7 @@
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#carousel">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#practices">Practice Areas</a></li>
                         <li><a href="#team">Our Team</a></li>
