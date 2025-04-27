@@ -74,4 +74,39 @@ $(document).ready(function() {
                 // Hide all attorney profiles
                 $('.attorney-profile').fadeOut(300);
             });
+
+            
+            
+            // Carousel Auto Slide
+              let currentSlide = 0;
+              const slides = $('.carousel-slide');
+              const totalSlides = slides.length;
+
+              function showSlide(index) {
+                const offset = -index * 100;
+                $('.carousel-container').css('transform', `translateX(${offset}%)`);
+                $('.dot').removeClass('active');
+                $(`.dot[data-slide=${index}]`).addClass('active');
+              }
+
+              function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+              }
+
+              function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(currentSlide);
+              }
+
+              $('.carousel-next').click(nextSlide);
+              $('.carousel-prev').click(prevSlide);
+              $('.dot').click(function() {
+                currentSlide = $(this).data('slide');
+                showSlide(currentSlide);
+              });
+
+             setInterval(nextSlide, 3000);
+
+
         });
