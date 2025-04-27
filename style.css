@@ -493,7 +493,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 10%; /* Adjust this value based on the height of your navbar */
+    /* margin-top: 10%; Adjust this value based on the height of your navbar */
   }
       
   .carousel-container {
