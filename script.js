@@ -122,7 +122,7 @@ $(document).ready(function() {
                 showSlide(currentSlide);
               });
 
-             //setInterval(nextSlide, 8000);
+             setInterval(nextSlide, 5000);
 
 
         });
