@@ -76,6 +76,22 @@ $(document).ready(function() {
             });
 
             
+            // Back to Top Button
+                var backToTopButton = $('#back-to-top');
+
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 300) {
+                        backToTopButton.fadeIn();
+                    } else {
+                        backToTopButton.fadeOut();
+                    }
+                });
+
+                backToTopButton.click(function() {
+                    $('html, body').animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+
             
             // Carousel Auto Slide
               let currentSlide = 0;
@@ -106,7 +122,7 @@ $(document).ready(function() {
                 showSlide(currentSlide);
               });
 
-             setInterval(nextSlide, 3000);
+             //setInterval(nextSlide, 8000);
 
 
         });
