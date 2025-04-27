@@ -171,17 +171,25 @@
 			font-size: 1.1rem;
 		}
 
-		.hero-info {
+		/* .hero-info {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
 			justify-content: center;
 			text-align: right;
-		}
+		} */
+        .hero-info {
+            align-items: center;
+        }
+    
+        .firm-name {
+             text-align: center;
+             margin: 0 auto;
+             }
 
 		.year-container {
-            display: flex;
-            justify-content: flex-end;
+            /* display: flex;
+            justify-content: flex-end; */
             align-items: center;
             margin-bottom: 20px;
         }
@@ -196,9 +204,9 @@
             margin: 0 10px;
         }
 
-        .firm-name {
+        /* .firm-name {
             text-align: right;
-        }
+        } */
 
         .firm-name p {
             font-size: 1.2rem;
@@ -480,56 +488,188 @@
             color: var(--light-blue);
         }
 
-        /* Media Queries */
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10%; /* Adjust this value based on the height of your navbar */
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px;
+  }
 
-            h2 {
-                font-size: 2rem;
-            }
+  
+    .text-container {
+     max-width: 800px; /* Adjust this value as needed */
+     margin: 0 auto;
+     text-align: left;
+    }
+    
+  
+  .carousel-slide h1 {
+    font-size: 3rem;
+    color: var(--gold);
+  }
+  
+  .carousel-slide p {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  
+  .carousel-slide .slideImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);    
+    padding: 0 10%; /* Add padding to ensure arrows are not at the end of the screen */
 
-            .nav-links {
-                position: absolute;
-                right: 0;
-                top: 80px;
-                background-color: var(--dark-blue);
-                flex-direction: column;
-                width: 100%;
-                align-items: center;
-                transform: translateX(100%);
-                transition: transform 0.5s ease-in;
-                padding: 20px 0;
-                border-bottom: 1px solid var(--gold);
-            }
+  }
+  
+  .carousel-prev, .carousel-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: var(--gold);
+  }
+  
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .contact-info {
+    max-width: 600px;
+  }
+  
+  .contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+  }
+  
+  .contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  
 
-            .nav-links li {
-                margin: 15px 0;
-            }
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: var(--dark-blue);
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--gold);
+    }
+    .nav-links li {
+        margin: 15px 0;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    .hamburger {
+        display: block;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+    .attorney-container {
+        grid-template-columns: 1fr;
+    }
+    .attorney-image {
+        margin: 0 auto;
+    }
 
-            .nav-active {
-                transform: translateX(0%);
-            }
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    .hero-content, .hero-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .hero-info {
+        align-items: center;
+    }
 
-            .hamburger {
-                display: block;
-            }
-
-            .about {
-                grid-template-columns: 1fr;
-            }
-            
-            .team-members {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .attorney-container {
-                grid-template-columns: 1fr;
-            }
-
-            .attorney-image {
-                margin: 0 auto;
-            }
-        }
+    .firm-name {
+         text-align: center;
+         margin: 0 auto;
+         }
+    
+}
