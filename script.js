@@ -122,7 +122,7 @@ $(document).ready(function() {
              showSlide(currentSlide);
              });
 
-            //  setInterval(nextSlide, 2500);
+            setInterval(nextSlide, 3000);
 
             // Service Modal Functionality
             $('.service-item').click(function() {
