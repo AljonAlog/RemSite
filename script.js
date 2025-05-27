@@ -77,52 +77,80 @@ $(document).ready(function() {
 
             
             // Back to Top Button
-                var backToTopButton = $('#back-to-top');
+             var backToTopButton = $('#back-to-top');
 
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 300) {
-                        backToTopButton.fadeIn();
-                    } else {
-                        backToTopButton.fadeOut();
-                    }
-                });
+             $(window).scroll(function() {
+             if ($(this).scrollTop() > 300) {
+             backToTopButton.fadeIn();
+             } else {
+             backToTopButton.fadeOut();
+             }
+             });
 
-                backToTopButton.click(function() {
-                    $('html, body').animate({ scrollTop: 0 }, 800);
-                    return false;
-                });
+             backToTopButton.click(function() {
+             $('html, body').animate({ scrollTop: 0 }, 800);
+             return false;
+             });
 
             
             // Carousel Auto Slide
-              let currentSlide = 0;
-              const slides = $('.carousel-slide');
-              const totalSlides = slides.length;
+             let currentSlide = 0;
+             const slides = $('.carousel-slide');
+             const totalSlides = slides.length;
 
-              function showSlide(index) {
-                const offset = -index * 100;
-                $('.carousel-container').css('transform', `translateX(${offset}%)`);
-                $('.dot').removeClass('active');
-                $(`.dot[data-slide=${index}]`).addClass('active');
-              }
+             function showSlide(index) {
+             const offset = -index * 100;
+             $('.carousel-container').css('transform', `translateX(${offset}%)`);
+             $('.dot').removeClass('active');
+             $(`.dot[data-slide=${index}]`).addClass('active');
+             }
 
-              function nextSlide() {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                showSlide(currentSlide);
-              }
+             function nextSlide() {
+             currentSlide = (currentSlide + 1) % totalSlides;
+             showSlide(currentSlide);
+             }
 
-              function prevSlide() {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                showSlide(currentSlide);
-              }
+             function prevSlide() {
+             currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+             showSlide(currentSlide);
+             }
 
-              $('.carousel-next').click(nextSlide);
-              $('.carousel-prev').click(prevSlide);
-              $('.dot').click(function() {
-                currentSlide = $(this).data('slide');
-                showSlide(currentSlide);
-              });
+             $('.carousel-next').click(nextSlide);
+             $('.carousel-prev').click(prevSlide);
+             $('.dot').click(function() {
+             currentSlide = $(this).data('slide');
+             showSlide(currentSlide);
+             });
 
-             setInterval(nextSlide, 5000);
+            //  setInterval(nextSlide, 2500);
 
+            // Service Modal Functionality
+            $('.service-item').click(function() {
+                const serviceType = $(this).data('service');
+                const modalId = '#modal-' + serviceType;
+                $(modalId).fadeIn(300);
+                $('body').css('overflow', 'hidden'); // Prevent background scrolling
+            });
 
+            // Close modal when clicking the X button
+            $('.modal-close').click(function() {
+                $(this).closest('.modal').fadeOut(300);
+                $('body').css('overflow', 'auto'); // Restore scrolling
+            });
+
+            // Close modal when clicking outside the modal content
+            $('.modal').click(function(e) {
+                if (e.target === this) {
+                    $(this).fadeOut(300);
+                    $('body').css('overflow', 'auto'); // Restore scrolling
+                }
+            });
+
+            // Close modal with Escape key
+            $(document).keydown(function(e) {
+                if (e.key === 'Escape') {
+                    $('.modal:visible').fadeOut(300);
+                    $('body').css('overflow', 'auto'); // Restore scrolling
+                }
+            });
         });
