@@ -44,7 +44,7 @@
                 <span class="year">25</span>
             </div>
             <div class="firm-name">
-                <p>The Law Office of</p>
+                <p style="text-align: center !important;">The Law Office of</p>
                 <h2>RUMA<br>ESCALANTE<br>&amp; LABUGUEN</h2>
             </div>
         </div>
@@ -59,8 +59,8 @@
                 </p>
             </div>
       </div>
-      <div class="carousel-slide" class="slideImage">
-        <img src="Images/Group_pic.png" alt="Group picture" >
+      <div class="carousel-slide slideImage">
+        <img src="Images/Group_pic.png" alt="Group picture" style="max-width: 100%; height: auto; object-fit: contain;">
       </div>
     </div>
     <div class="carousel-navigation">
@@ -100,38 +100,235 @@
     </div>
 	</section> -->
 
-    <!-- Services Section -->
+   <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
             <h2>Our Services</h2>
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-item" data-service="consultation">
                     <div class="service-icon">📄</div>
-                    <h3>Onsite and online Legal consultation</h3>
+                    <h3>Consultations & Appointments</h3>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="drafting">
                     <div class="service-icon">📝</div>
-                    <h3>Legal document drafting and Notarial services</h3>
+                    <h3>Legal document drafting & Notarial services</h3>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="litigation">
                     <div class="service-icon">⚖️</div>
-                    <h3>Court Litigation in any kinds of cases</h3>
+                    <h3>Court Litigation in All Kinds of Cases</h3>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="contracts">
                     <div class="service-icon">📋</div>
-                    <h3>Contract drafting and Contract review</h3>
+                    <h3>Contract Drafting and Review</h3>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="property">
                     <div class="service-icon">🏠</div>
-                    <h3>Land registration and Real Property Matters</h3>
+                    <h3>Land registration & Real Property Matters</h3>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="debt">
                     <div class="service-icon">🗃️</div>
                     <h3>Debt Collection</h3>
                 </div>
             </div>
         </div>
     </section>
+
+   <!-- Service Modals -->
+    <div id="modal-consultation" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Consultations & Appointments</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 style="color: var(--gold); margin-top: 20px;">Walk-In Consultations</h4>
+                <p>📍 Unit 1, San Andres Commercial Building, Tuguegarao Road corner Basilio Street, San Andres, Santiago City, Isabela</p>
+                <p>🕘 Monday to Saturday | 8:00 AM – 5:00 PM</p>
+                <p>No appointment needed. Clients are accommodated on a first-come, first-served basis.</p>
+                <br>
+                <h4 style="color: var(--gold); margin-top: 20px;">Online Consultations</h4>
+                <p>📧 Email: rumaescalantelabuguenlaw@gmail.com</p>
+                <p>💬 WhatsApp: 0998-976-3088</p>
+                <p>👍 Facebook: Ruma Escalante Labuguen Law</p>
+                <br>
+                <h4 style="color: var(--gold); margin-top: 20px;">To book an online consultation, please send:</h4>
+                <ul>
+                    <li>Your full name</li>
+                    <li>Contact number</li>
+                    <li>Brief description of your legal concern</li>
+                    <li>Relevant documents (if any)</li>
+                </ul>
+                <br>
+                <p>📌 <em>Note: Online appointments are confirmed only upon payment. Details will be sent upon inquiry.</em></p>
+                <p>Payment instructions will be provided after we receive your inquiry. Kindly await the confirmation from our team.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-drafting" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Legal Document Drafting and Notarial Services</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>We prepare, review, and notarize all types of legal documents to ensure accuracy, compliance, and enforceability.</p>
+                <h4 style="color: var(--gold); margin-top: 20px;">Services include:</h4>
+                <ul>
+                    <li><strong>Drafting</strong>: Contracts, affidavits, deeds, powers of attorney, and more</li>
+                    <li><strong>Notarization</strong>: Acknowledgment, jurat, oath-taking, with proper ID verification</li>
+                    <li><strong>Additional</strong>: Filing, delivery, and issuance of certified copies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-litigation" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Court Litigation in All Kinds of Cases</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 style="color: var(--gold); margin-top: 20px;">We handle a wide range of cases at all levels of the Philippine judiciary. Our litigation team provides strategic, assertive, and client-focused representation.</h4>
+                <ul>
+                    <li><strong>Civil Cases</strong> – including breach of contract, property disputes, torts, damages, annulment of title, and ejectment</li>
+                    <li><strong>Criminal Cases</strong> – from preliminary investigation to trial for offenses under the Revised Penal Code and special penal laws</li>
+                    <li><strong>Family Law </strong>– such as annulment of marriage, legal separation, child custody, support, and adoption</li>
+                    <li><strong>Land Registration and Property Cases</strong> – including reissuance of title, reconstitution of title, cancellation of encumbrance in the title, land titling, agrarian disputes, and expropriation</li>
+                    <li><strong>Appeals and Special Proceedings</strong> – including correction and/ or cancellation of entries in the birth certificate, legitimation,  petitions for certiorari, habeas corpus, and probate cases</li>
+                    <li><strong>Labor and Employment Disputes</strong> – including illegal dismissal, money claims, and labor standards violations</li>
+                    <li><strong>Corporate and Commercial Litigation</strong> – including intra-corporate disputes and business-related claims</li>
+                    <li><strong>Administrative and Quasi-Judicial Cases</strong> – including cases before government agencies like the PRC, HLURB, SEC, and NLRC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-contracts" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Contract Drafting and Review</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>At Ruma Escalante Labuguen Law Office, we provide clear, reliable legal support for all your contract needs. Whether you're creating a new agreement or reviewing an existing one, we ensure your rights are protected and your obligations are clear.</p>
+                <br>
+                <h4 style="color: var(--gold); margin-top: 20px;">Contract Drafting</h4>
+                <p>We prepare well-structured contracts that match your specific needs and goals. Every agreement we draft is designed to prevent future disputes and protect your legal rights. Our drafting services cover:</p>
+                <ul>
+                    <li>Business contracts (partnerships, joint ventures, service agreements)</li>
+                    <li>Commercial lease agreements</li>
+                    <li>Employment and independent contractor agreements</li>
+                    <li>Sales and purchase agreements</li>
+                    <li>Non-disclosure and confidentiality agreements</li>
+                    <li>MOAs and MOUs</li>
+                    <li>Licensing, franchise, and distribution agreements</li>
+                    <li>Supplier and vendor contracts</li>
+                    <li>Others</li>
+                </ul>
+
+                <br>
+                <h4 style="color: var(--gold); margin-top: 20px;">Contract Review</h4>
+                <p>Before you sign any contract, it’s important to know exactly what you’re agreeing to. Our team reviews all types of agreements to help you spot risks and understand your obligations. We offer:</p>
+                <ul>
+                    <li>A detailed review of each section of the contract</li>
+                    <li>Identification of risks, liabilities, and one-sided terms</li>
+                    <li>Recommended changes or negotiation points</li>
+                    <li>Checks for legal compliance</li>
+                    <li>Easy-to-understand explanations so you know your rights</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-property" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Land Registration & Real Property Matters</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Real estate ownership in the Philippines involves complex legal processes that require precision and expert guidance. Our firm offers end-to-end legal support for land registration and all types of real property concerns—ensuring our clients’ ownership rights are protected, enforceable, and secure.</p>
+                <h4 style="color: var(--gold); margin-top: 20px;">Our Services Include:</h4>
+                <ul>
+                    <li><strong>✅ Land Registration</strong>
+                        <ul>
+                            <li>Original registration of unregistered land</li>
+                            <li>Reissuance of lost or destroyed titles</li>
+                            <li>Administrative and Judicial Reconstitution of lost or destroyed titles</li>
+                            <li>Correction of erroneous title entries</li>
+                            <li>Coordination with the LRA, Register of Deeds, and DENR</li>
+                        </ul>
+                    </li>
+                    <li><strong>✅ Title Transfers & Documentation</strong>
+                        <ul>
+                            <li>Drafting and notarization of Deeds of Sale, Donation, Partition, etc.</li>
+                            <li>Title transfers due to sale or succession</li>
+                            <li>Estate settlement and tax compliance</li>
+                        </ul>
+                    </li>
+                    <li><strong>✅ Real Property Transactions</strong>
+                        <ul>
+                            <li>Lease agreements, mortgages, and usufructs</li>
+                            <li>Joint ventures and real estate development</li>
+                            <li>Assistance for subdivisions, condos, and HOAs</li>
+                        </ul>
+                    </li>
+                    <li><strong>✅ Dispute Resolution & Litigation</strong>
+                        <ul>
+                            <li>Quieting of title, reconveyance, and annulment of title</li>
+                            <li>Ejectment, boundary disputes, and adverse possession</li>
+                            <li>Fraudulent title claims and double titling issues</li>
+                            <li>Representation before courts and government agencies (LRA, DAR, HLURB/DHSUD, LGUs)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-debt" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Debt Collection</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Unpaid debts can disrupt your business and cash flow. At Ruma Escalante Labuguen Law Office, we provide fast, effective, and legally compliant debt recovery services for individuals, businesses, and financial institutions in the Philippines.</p>
+                <p>Debt collection may be pursued through extrajudicial or judicial means, depending on the nature of the obligation and the debtor’s willingness to cooperate. Our office provides strategic legal assistance at every stage of the process—from initial demand to post-judgment enforcement. </p>
+                <h4 style="color: var(--gold); margin-top: 20px;">Debt collection services include:</h4>
+                <ul>
+                    <li><strong>Pre-Litigation Collection</strong>
+                        <ul>
+                            <li><strong>Demand Letters:</strong> Formal notices that state the obligation, interest due, and legal risks of non-payment.</li>
+                            <li><strong>Negotiation & Mediation:</strong> We seek settlement options to resolve matters quickly and amicably.</li>
+                            <li><strong>Debtor Tracing:</strong> We locate debtors and evaluate assets to assess collectability.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Court Action</strong>
+                        <ul>
+                            <li><strong>Filing Collection Cases:</strong> When settlement fails, we initiate legal action, including:
+                                <ul>
+                                    <li>Collection of Sum of Money</li>
+                                    <li>Breach of Contract</li>
+                                    <li>Replevin (for secured debts)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Judgment Enforcement:</strong> We use legal remedies like garnishment and levy to collect on the judgment.</li>
+                        </ul>
+                    </li>
+                    <li>Post-Judgment Support
+                        <ul>
+                            <li>Our commitment does not end with securing a favorable judgment. We take prompt and effective steps to enforce the court’s decision—coordinating with sheriffs, banks, and enforcement agencies to implement asset seizure, wage garnishment, or account levies until full satisfaction is achieved.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>We use strategic and legally compliant methods to maximize recovery while maintaining professional standards throughout the collection process.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Practice Areas Section -->
     <section class="practices" id="practices">
@@ -140,19 +337,19 @@
             <div class="practices-grid">
                 <div class="practice-area">
                     <h3>General Counsel</h3>
-                    <p>Comprehensive legal advice and representation for businesses of all sizes, serving as your trusted legal advisor for day-to-day operations and strategic decisions.</p>
+                    <p>We provide expert legal advice, representation, and consultations across various areas of law to protect our clients' rights and interests.</p>
                 </div>
                 <div class="practice-area">
                     <h3>Land Titles and Disputes</h3>
-                    <p>Expert handling of property documentation, boundary disputes, title transfers, and all legal matters related to land ownership and rights.</p>
+                    <p>Our firm resolves land title issues and property disputes, ensuring the protection of ownership rights through expert legal representation and dispute resolution.</p>
                 </div>
                 <div class="practice-area">
                     <h3>Corporate Law</h3>
-                    <p>Full-service corporate legal support including formation, compliance, governance, mergers and acquisitions, and business transactions.</p>
+                    <p>We offer comprehensive legal support for businesses, including formation, compliance, governance, and dispute resolution to safeguard and promote business success.</p>
                 </div>
                 <div class="practice-area">
                     <h3>Family Law and Public Personal Records</h3>
-                    <p>Compassionate legal assistance for family matters including divorce, custody, adoption, and management of personal legal documentation.</p>
+                    <p>We handle family law matters such as annulments, custody, and adoption, as well as public personal records issues like name corrections and birth certificate amendments with care and expertise.</p>
                 </div>
             </div>
         </div>
@@ -293,7 +490,7 @@
                     <img src="Images/Labugen_Formal.jpeg" alt="Attorney Labugen Full Profile">
                 </div>
                 <div class="attorney-info">
-                    <h2>Atty. Mia Marinelle R. Labugen</h2>
+                    <h2>Atty. Mia Marinelle R. Labuguen</h2>
                     <h3>Senior Partner</h3>
                     
                     <div class="attorney-bio">
@@ -306,7 +503,7 @@
                     </div>
                                         
                     <div class="attorney-buttons">
-                        <a href="#contact" class="btn">Contact Atty. Labugen</a>
+                        <a href="#contact" class="btn">Contact Atty. Labuguen</a>
                     </div>
                     
                     <a href="#team" class="back-to-team">← Back to Team</a>
@@ -323,8 +520,8 @@
         <div class="contact-info">
           <h3>Ruma Escalante and Labuguen Law</h3>
           <p><i class="fas fa-map-marker-alt"></i> Unit 1 San Andres Commercial Bldg., Tuguegarao Rd., corner Basilio St., San Andres, Santiago City, Isabela</p>
-          <p><i class="fas fa-phone"></i> 0995-198-4038</p>
-          <p><i class="fas fa-envelope"></i> rumaescavantelabugenlaw@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 0998-976-3088</p>
+          <p><i class="fas fa-envelope"></i> rumaescalantelabuguenlaw@gmail.com</p>
         </div>
         <div class="contact-map">
           <iframe
@@ -353,14 +550,14 @@
                     </div>
                     <p><i class="fas fa-map-marker-alt"></i> Unit 1 San Andres Commercial Bldg., Tuguegarao Rd., 
 						<br/>corner Basilio St., San Andres, Santiago City, Isabela</p>
-                    <p><i class="fas fa-phone"></i> 0995-198-4038</p>
-                    <p><i class="fas fa-envelope"></i> rumaescavantelabugenlaw@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0998-976-3088</p>
+                    <p><i class="fas fa-envelope"></i> rumaescalantelabuguenlaw@gmail.com</p>
                 </div>
 				<div class="footer-links">
                     <h4>Office Hours</h4>
                     <ul>
                         <p style="color: gray">Monday to Saturday</p>
-                        <p>9:00 am to 6:00 pm</p>
+                        <p>8:00 am to 5:00 pm</p>
 						<p style="color: gray">Sunday</p>
 						<p>By appointment</p>
                     </ul>
@@ -378,8 +575,8 @@
 				<div class="footer-links">
                     <h4>Follow Us</h4>
                     <ul>
-                        <li><a href="https://www.google.com">Facebook</a></li>
-                        <li><a href="google.com">Instagram</a></li>
+                        <li><a href="https://web.facebook.com/rumaescalantelabuguenlaw">Facebook</a></li>
+                        <li><a href="https://web.facebook.com/rumaescalantelabuguenlaw">Instagram</a></li>
                     </ul>
                 </div>
             </div>
